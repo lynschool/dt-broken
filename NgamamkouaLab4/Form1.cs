@@ -143,7 +143,7 @@ namespace NgamamkouaLab4
                         lblPrice.Text = numx.ToString("c");
                     }
                     // declaration of string variable
-                    String flight, cash, location;
+                    string flight, cash, location;
                     //if Fflight checkbox is checked
                     if (chkFlight.Checked== true)
                     {
@@ -181,7 +181,7 @@ namespace NgamamkouaLab4
                     //display the msg
                     lblInformation.Text ="Booked by Edwin Tienteu \n\nPeople:  " + num1.ToString("d2") +
                         "\nLocation: " + location.ToUpper() + 
-                         flight + cash + "\nPrice: " + numx.ToString("c")
+                         flight + cash + "\nPrice: " + numx.ToString("c");
                     // disable book groupbox 
                     grpBook.Enabled = false;
                 }
@@ -207,7 +207,7 @@ namespace NgamamkouaLab4
             
         }
 
-        private  btnConfirm_Click(object sender, EventArgs e)
+        private void btnConfirm_Click(object sender, EventArgs e)
         {
             // variable store whatever was the price
             string numx = lblPrice.Text;
